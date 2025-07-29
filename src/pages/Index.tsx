@@ -36,15 +36,23 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50 relative">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 opacity-10">
+        <img src="/img/a0f7ce89-ba94-4f83-8f46-7039163f4d43.jpg" alt="" className="w-full h-full object-cover" />
+      </div>
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-100 to-yellow-100 opacity-60"></div>
-        <div className="relative container mx-auto px-4 py-20 text-center">
-          <h1 className="text-6xl font-black mb-4 text-bun tracking-tight" style={{fontFamily: 'Impact, Arial Black, sans-serif'}}>
+        <div className="relative container mx-auto px-4 py-20 text-center z-10">
+          {/* Burger Hero Image */}
+          <div className="mb-8">
+            <img src="/img/2341887b-1890-4acf-aaca-7050ee06d181.jpg" alt="Двойной чизбургер" className="w-32 h-32 mx-auto rounded-full border-4 border-cheese shadow-xl animate-bounce-gentle" />
+          </div>
+          <h1 className="text-6xl font-black mb-4 text-bun tracking-tight drop-shadow-lg" style={{fontFamily: 'Impact, Arial Black, sans-serif'}}>
             ПОИСКОВИК
           </h1>
-          <h2 className="text-4xl font-black mb-8 text-tomato" style={{fontFamily: 'Impact, Arial Black, sans-serif'}}>
+          <h2 className="text-4xl font-black mb-8 text-tomato drop-shadow-md" style={{fontFamily: 'Impact, Arial Black, sans-serif'}}>
             ДВОЙНОЙ ЧИЗБУРГЕР
           </h2>
           <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto font-medium">
