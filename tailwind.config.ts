@@ -19,6 +19,11 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Burger theme colors
+				cheese: '#FFA500',
+				bun: '#8B4513',
+				tomato: '#DC143C',
+				lettuce: '#228B22',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -84,11 +89,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'cheese-stretch': {
+					'0%': { transform: 'scaleY(1)' },
+					'50%': { transform: 'scaleY(1.3) translateY(-5px)' },
+					'100%': { transform: 'scaleY(1)' }
+				},
+				'bounce-gentle': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-3px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'cheese-stretch': 'cheese-stretch 0.6s ease-in-out infinite',
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite'
 			}
 		}
 	},
